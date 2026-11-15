@@ -3,7 +3,7 @@ name: build
 on:
   push:
     tags:
-      - "v*+mc*"
+      - "v*"
   workflow_dispatch:
     inputs:
       mod_version:
