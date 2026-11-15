@@ -34,6 +34,7 @@ upstream/lang_zh_cn_*.json      # mod 内置官方 zh_cn (术语基准)
 tools/fetch_upstream.py         # 从 Modrinth 拉取指定 MC 版本的最新 jar, 抽出 en_us 手册与 lang
 tools/check_book.py             # 校验: JSON 结构/标记配对/链接目标/残留英文/lang 键
 tools/build.py                  # 打包 dist/*.zip
+tools/create_project.py         # 在 Modrinth 创建项目 (幂等, 首次用; 新项目必须 is_draft 再单独提审)
 tools/publish_modrinth.py       # 发布到 Modrinth (令牌走 pass:modrinth/token, 支持 --dry-run)
 changelog/<版本号>.md           # 版本更新说明 (发布时自动带上)
 docs/glossary.md                # 术语对照表 (英文名 → 官方 zh_cn 译名)

@@ -28,6 +28,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 API = "https://api.modrinth.com/v2/version"
 UA = "jssda/pnc-cn-guidebook/1.0 (github.com/jssda)"
 PROJECT_SLUG = "pneumaticcraft-repressurized-guidebook-cn"   # resourcepack
+PROJECT_ID = "obouLl2n"   # v2 版本创建接口的 project_id 只认 8 位 ID, 不认 slug
 
 
 def read_token(pass_entry):
@@ -75,7 +76,7 @@ def main():
     ap.add_argument("--game-versions", default="1.21,1.21.1")
     ap.add_argument("--loaders", default="minecraft")
     ap.add_argument("--version-type", default="release", choices=["release", "beta", "alpha"])
-    ap.add_argument("--project-id", default=PROJECT_SLUG)
+    ap.add_argument("--project-id", default=PROJECT_ID)
     ap.add_argument("--featured", action="store_true")
     ap.add_argument("--pass-entry", default="modrinth/token")
     ap.add_argument("--dry-run", action="store_true")

@@ -61,10 +61,10 @@ def main():
         return 3
     print("token 来源: %s" % src)
 
-    # 幂等: 已存在则直接返回
+    # 幂等: 已存在则直接返回 (带 token 查询, 草稿项目对匿名不可见)
     try:
         req = urllib.request.Request("https://api.modrinth.com/v2/project/%s" % PROJECT_SLUG,
-                                     headers={"User-Agent": UA})
+                                     headers={"User-Agent": UA, "Authorization": token})
         with urllib.request.urlopen(req, timeout=30) as r:
             p = json.load(r)
         print("项目已存在: %s (%s)  https://modrinth.com/resourcepack/%s" % (p["id"], p["title"], p["slug"]))
@@ -75,20 +75,23 @@ def main():
             return 1
 
     data = {
-        "name": "PneumaticCraft-CN-GuideBook",
+        "title": "PneumaticCraft-CN-GuideBook",
         "slug": PROJECT_SLUG,
-        "summary": "气动工艺：再加压 Patchouli 手册简体中文汉化资源包 (mod 8.2.23 / MC 1.21.1)",
-        "description": DESCRIPTION,
+        "description": "气动工艺：再加压 Patchouli 手册简体中文汉化资源包 (mod 8.2.23 / MC 1.21.1)",
+        "body": DESCRIPTION,
         "categories": ["locale"],
+        "additional_categories": [],
         "client_side": "required",
         "server_side": "unsupported",
         "license_id": "MIT",
         "project_type": "resourcepack",
+        "is_draft": True,
+        "requested_status": "approved",
         "source_url": "https://github.com/jssda/PneumaticCraft-CN-GuideBook",
         "issues_url": "https://github.com/jssda/PneumaticCraft-CN-GuideBook/issues",
         "initial_versions": [],
     }
-    print("将创建项目: %s (%s)" % (data["name"], data["slug"]))
+    print("将创建项目: %s (%s)" % (data["title"], data["slug"]))
     if args.dry_run:
         print("(--dry-run, 未发送)")
         return 0
