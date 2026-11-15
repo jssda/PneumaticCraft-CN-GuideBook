@@ -1,0 +1,25 @@
+{
+  "name": "热管",
+  "icon": "pneumaticcraft:heat_pipe",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)热管/$ 是以压缩铁为隔热芯的方块，可以在方块之间传递热量，而与相邻的空气或流体方块没有任何热连接。它是用 $(thing)压缩铁块/$ 传热的更紧凑（也更便宜）的替代品。$(p)你可以用 $(l:tools/camo_applicator)伪装涂覆器/$ 隐藏热管。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/heat_sinks.png"
+      ],
+      "border": "true",
+      "text": "$(italic)TODO：热管图片/$"
+    },
+    {
+      "type": "crafting",
+      "text": "制作热管",
+      "recipe": "pneumaticcraft:heat_pipe"
+    }
+  ]
+}

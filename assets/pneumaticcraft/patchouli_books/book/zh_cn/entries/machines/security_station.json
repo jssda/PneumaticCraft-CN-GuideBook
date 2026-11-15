@@ -1,0 +1,84 @@
+{
+  "name": "安全站",
+  "icon": "pneumaticcraft:security_station",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "如果你想保护一片区域免受敌对玩家的侵扰，可以使用 $(thing)安全站/$。$(p)该设备会阻止任何不受信任的玩家与其范围内的任何方块进行交互。这意味着他们无法打开任何容器或 GUI，也无法放置或破坏方块。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:security_station",
+      "text": "这听起来很棒，但要搭建一个 $(thing)安全站/$，你需要做一些事情来确保它的安全。因为问题在于，$(thing)安全站/$ 是可能被 $(l:machines/security_station#hacking)骇入/$ 的。安全站的骇入系统在很大程度上受到 $(l:https://www.youtube.com/watch?v=nQ0rPLlU8v4)杀出重围：人类革命的骇入系统/$ 的启发。"
+    },
+    {
+      "type": "text",
+      "title": "搭建",
+      "text": "要搭建一个 $(thing)安全站/$，你必须在网络网格中放置 $(l:components/network_components)网络元件/$ 来组成一个 $(thing)网络/$。每个网络中都必须有一个 $(l:components/network_components#diagnostic)诊断子程序/$、一个 $(l:components/network_components#io_port)网络交互端口/$ 和一个 $(l:components/network_components#registry)网络注册表/$。$(p)这三个特殊节点必须彼此相连，而这需要借助 $(l:components/network_components#node)网络节点/$ 来完成。"
+    },
+    {
+      "type": "text",
+      "title": "骇入功能已禁用",
+      "flag": "!pneumaticcraft:securityStationHacking",
+      "text": "本服务器已通过配置禁用了安全站骇入功能。虽然这意味着你的安全站一旦搭建完成就没有玩家能够骇入它，但你仍然需要按照上一页所述，用正确的元件来搭建它。不过，后续的大多数页面（除 $(thing)放行好友/$ 外）在此情况下都不适用。"
+    },
+    {
+      "type": "text",
+      "title": "规则",
+      "text": "$(l:machines/security_station#hacking)黑客/$ 从 $(thing)网络交互端口/$ 开始，目标是夺取 $(thing)诊断子程序/$ 或 $(thing)网络注册表/$ 中的任何一个。$(p)而 $(thing)诊断子程序/$ 的目标则是回溯追踪到黑客位于 $(thing)网络交互端口/$ 的入侵入口。"
+    },
+    {
+      "type": "text",
+      "text": "以更大的堆叠数量放置 $(thing)网络节点/$ 元件会提升 $(italic)节点等级/$，这意味着 $(thing)黑客/$ 和 $(thing)诊断子程序/$ 都需要花费更长的时间才能夺取它们。但请注意，由于 $(thing)诊断子程序/$ 的追踪速度比 $(thing)黑客/$ 更快，因此这对黑客造成的不利要大于对诊断子程序的不利。"
+    },
+    {
+      "type": "text",
+      "title": "黑客工具",
+      "text": "有几件实用的物品是黑客应当设法获取的；它们都无法合成，只能在世界中找到（村民交易或地牢战利品）：$(li)$(l:components/nuke_virus)核弹病毒/$，可用来立即夺取一个节点$(li)$(l:components/stop_worm)停！蠕虫/$，可暂时冻结诊断子程序的追踪进度。"
+    },
+    {
+      "type": "text",
+      "title": "升级",
+      "text": "$(thing)安全站/$ 可以安装几种升级：$(li)$(l:base_concepts/upgrades#entity_tracker)实体追踪升级/$ 会提高 $(l:machines/security_station#hacking)黑客/$ 被检测到的几率；收益递减，且每次节点骇入尝试的最高防护几率为 99%。$(li)$(l:base_concepts/upgrades#range)范围升级/$ 每安装一个就会将安全站的保护范围扩大 1 格，在各个方向上最多可达 16 格（即最大保护区域为 33x33x33 格）。"
+    },
+    {
+      "type": "text",
+      "title": "升级（续）",
+      "text": "$(li)$(l:base_concepts/upgrades#security)安全升级/$ 会提高黑客开始骇入时其 $(l:armor/pneumatic_helmet)气动头盔/$ 中所需 $(thing)安全升级/$ 的数量。请注意，黑客不会被告知需要多少个安全升级；而且，对于任何试图骇入、却因安全升级不足而无法得手的玩家，安全站都会对其造成少量无法抵抗的伤害。"
+    },
+    {
+      "type": "text",
+      "title": "放行好友",
+      "text": "你可以将友好的玩家添加到你的 $(thing)安全站/$ 中，允许他们在受保护的区域内进行交互；使用 $(bold)Shared Users/$ 侧边标签页来输入玩家名称。$(p)你也可以在这里移除不再受信任的玩家；只需点击该玩家的名字即可将其移除。"
+    },
+    {
+      "type": "text",
+      "title": "遭遇骇入",
+      "text": "当有人骇入你的 $(thing)安全站/$ 时，你可以在 $(bold)Problems/$ 和 $(bold)Status/$ 标签页中看到，那里还会显示是 $(italic)谁/$ 骇入了你的系统。这些玩家（且仅限这些玩家）现在可以与该区域内的方块进行交互。要恢复安全，你必须通过 GUI 中的 $(bold)Reboot/$ 按钮来 $(italic)重启/$ 该 $(thing)安全站/$。重启过程需要 60 秒，在此期间该区域完全不受保护。"
+    },
+    {
+      "type": "text",
+      "title": "骇入",
+      "anchor": "hacking",
+      "text": "要骇入一个不属于你的 $(thing)安全站/$，你需要一顶至少安装了一个（很可能需要许多）$(l:base_concepts/upgrades#security)安全升级/$ 的 $(l:armor/pneumatic_helmet)气动头盔/$。这样做时，会弹出一个与对面类似的 GUI。观看 $(l:https://www.youtube.com/watch?v=Lgmpslbrrwo)这个视频（虽然很旧但仍然适用）/$ 来了解骇入指南。$(p)要夺取一个节点，$(thing)左键/$ 点击它。要加固一个已夺取的节点，$(thing)右键/$ 点击它；被加固的节点会让诊断子程序花费稍长的时间才能夺取。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/hacking.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "提示",
+      "text": "$(li)把你的 $(thing)安全站/$ 妥善隐藏并保护起来。$(li)你可以用多个 $(thing)安全站/$ 来保护一片区域；骇入者必须把它们全部骇入才能得手。$(li)考虑采用主动防御手段，例如装有战斗程序的 $(l:tools/drone)无人机/$，或者 $(l:machines/sentry_turret)哨戒炮/$$(li)一个被骇入的 $(thing)安全站/$ 可以被设置为发出 $(#f00)红石信号/$，从而触发额外的防御措施（比如在安全站底下埋 TNT？）"
+    },
+    {
+      "type": "crafting",
+      "text": "合成安全站",
+      "recipe": "pneumaticcraft:security_station"
+    }
+  ]
+}

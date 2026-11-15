@@ -1,0 +1,28 @@
+{
+  "name": "流体漏斗",
+  "icon": "pneumaticcraft:liquid_hopper",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)流体漏斗/$ 是一种用来转移流体的装置。与 $(l:machines/omnidirectional_hopper)全向漏斗/$ 一样，它的输入端和输出端可以朝向任意方向，并遵循相同的放置与旋转规则。你可以加装 $(l:base_concepts/upgrades#speed)速度升级/$ 来提高传输速率。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:liquid_hopper",
+      "text": "$(item)流体漏斗/$ 还会尝试从 $(9)输入/$ 面前方掉落在地上的任意物品中抽取流体，并向 $(6)输出/$ 面前方的任意物品注入流体，例如水桶、熔岩桶或其他模组的流体容器。"
+    },
+    {
+      "type": "text",
+      "title": "发射器升级",
+      "flag": "pneumaticcraft:liquidHopperDispenser",
+      "text": "如果在 $(item)流体漏斗/$ 中装入 $(l:base_concepts/upgrades#dispenser)发射器升级/$，它就能吸收 $(9)输入/$ 面的任意液体方块（1000mB），并在 $(6)输出/$ 面放出 1000mB 已存储的液体。例如可以当水泵用。$(p)它还能吸收输入面的任意 $(item)经验球/$，将其转化为$(l:base_concepts/memory_essence)记忆源质/$。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作流体漏斗",
+      "recipe": "pneumaticcraft:liquid_hopper"
+    }
+  ]
+}

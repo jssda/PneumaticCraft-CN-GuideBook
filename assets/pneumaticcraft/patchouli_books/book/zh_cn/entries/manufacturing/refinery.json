@@ -1,0 +1,52 @@
+{
+  "name": "精炼厂",
+  "icon": "pneumaticcraft:refinery",
+  "category": "pneumaticcraft:manufacturing",
+  "advancement": "pneumaticcraft:oil_bucket",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)精炼厂/$是一种多方块机器，它利用$(l:base_concepts/heat)热量/$将$(l:base_concepts/oil)原油/$精炼成各种燃料。它在 100°C 时开始工作，温度越高，精炼越快。可生产的燃料按从轻到重排序为：$(li)$(thing)液化石油气（LPG）/$$(li)$(thing)汽油/$$(li)$(thing)煤油/$$(li)$(thing)柴油/$"
+    },
+    {
+      "type": "text",
+      "text": "$(thing)精炼厂/$是一种多方块结构：先放置一个$(item)精炼厂控制器/$，然后在其上方或旁边堆叠 2-4 个$(item)精炼厂输出端/$。 $(p)不同的多方块尺寸产出不同；以 10mB 原油为输入：$(p)$(bold)2 个输出端/$$(li)$(thing)液化石油气/$（2mB）$(li)$(thing)柴油/$（4mB）$(br)$(bold)3 个输出端/$$(li)$(thing)液化石油气/$（2mB）$(li)$(thing)煤油/$（3mB）$(li)$(thing)柴油/$（2mB）"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)4 个输出端/$$(li)$(thing)液化石油气/$（2mB）$(li)$(thing)汽油/$（3mB）$(li)$(thing)煤油/$（3mB）$(li)$(thing)柴油/$（2mB）$(p)最轻的燃料总是位于最顶部的$(item)精炼厂输出端/$，最重的位于底部。 如果你向现有的堆叠中再加$(item)精炼厂输出端/$，多方块结构会尽力自动将已有的输出液体重新排到正确的方块中，以保持系统运行。"
+    },
+    {
+      "type": "text",
+      "text": "所有产出的液体都可以在$(l:compressors/liquid_compressor)液体压缩机/$中用作燃料（越轻的燃料品质越好）。$(p)不过，它们还有另外两种非常重要的用途：$(li)$(thing)液化石油气/$用于制作液态$(l:components/plastic)塑料/$$(li)$(thing)柴油/$用于制作$(l:components/lubricant)润滑油/$，供$(l:base_concepts/upgrades#speed)速度升级/$使用。$(p)这两个加工过程都要用到$(l:manufacturing/thermopneumatic_processing_plant)热气动加工机/$。"
+    },
+    {
+      "type": "text",
+      "title": "比较器支持",
+      "text": "$(item)精炼厂/$可以与$(item)比较器/$配合工作：当$(item)精炼厂/$有活可干时，连接的比较器会输出强度 15 的信号，否则输出 0。有活可干指的是有$(thing)原油/$可供精炼$(italic)且/$输出储罐中有空间容纳精炼产物。$(p)这可以用来自动切断供给$(l:machines/vortex_tube)涡流管/$的空气，例如以节省空气。"
+    },
+    {
+      "type": "text",
+      "title": "搭建提示",
+      "text": "由于$(item)精炼厂/$这个多方块结构有许多面暴露在空气中，如果隔热不好，它会相当快地散失$(l:base_concepts/heat)热量/$。因此，强烈建议把多方块结构所有未使用的面都覆盖起来，以最大化效率。注意，任何不导热的方块都可以使用，包括$(item)台阶/$或$(item)活板门/$这类半固体方块，但特别推荐使用$(l:machines/thermal_lagging)隔热板/$。"
+    },
+    {
+      "type": "text",
+      "text": "你可以用$(l:machines/vortex_tube)涡流管/$给$(item)精炼厂/$加热，或在任意$(item)精炼厂/$方块旁放置高温流体（熔岩……）或方块（岩浆块……）。 注意，这些流体和方块会被消耗掉（它们的热量会被抽干），所以你可能需要想办法自动化生产和放置这些资源。"
+    },
+    {
+      "type": "link",
+      "flag": "mod:crafttweaker",
+      "title": "CraftTweaker",
+      "text": "$(item)精炼厂/$支持 $(l:https://minecraft.curseforge.com/projects/crafttweaker)CraftTweaker/$：可以添加和删除配方。点击下面的链接了解更多信息。",
+      "url": "https://docs.blamejared.com/1.16/en/mods/PneumaticCraft-Repressurized/Refinery",
+      "link_text": "CraftTweaker 文档"
+    },
+    {
+      "type": "crafting",
+      "text": "制作一个精炼厂",
+      "recipe": "pneumaticcraft:refinery",
+      "recipe2": "pneumaticcraft:refinery_output"
+    }
+  ]
+}

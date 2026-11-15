@@ -1,0 +1,34 @@
+{
+  "name": "放置方块部件",
+  "icon": "pneumaticcraft:textures/progwidgets/place_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 会把物品栏中的方块放置到世界中。它会在指定的 $(l:programming/area)区域/$ 内放置方块，从离它最近的位置开始。$(p)你可以控制放置方块的顺序：$(thing)右击/$该部件，设定 $(item)无人机/$ 是否逐层放置方块，以及是自上而下还是自下而上。"
+    },
+    {
+      "type": "text",
+      "title": "随机放置方块",
+      "text": "默认情况下，$(item)无人机/$ 会按顺序从物品栏的第一个槽位开始放置方块（请记住，无人机的物品栏默认只有一个槽位，但可以通过 $(l:base_concepts/upgrades#inventory)物品栏升级/$ 来增加）。$(p)勾选 $(thing)随机放置方块/$ 选项后，$(item)无人机/$ 会从物品栏中随机选择方块放置。"
+    },
+    {
+      "type": "text",
+      "title": "限制放置数量",
+      "text": "$(thing)右击/$该部件即可将放置次数限制为指定数量。例如设为 1 时，$(item)无人机/$ 只会放置一个方块，放置完这一个方块后该部件即视为完成。$(p)如果未设置限制，只有在无法再放置任何方块时，该部件才视为完成。"
+    },
+    {
+      "type": "text",
+      "title": "过滤",
+      "text": "最后，你可以指定 $(item)无人机/$ 物品栏中哪些方块可以被放置：连接一个 $(l:programming/item_filter)物品过滤器/$ 部件即可。连接在$(italic)右侧/$为物品白名单，连接在$(italic)左侧/$为物品黑名单。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/place_piece.png"
+      ],
+      "text": "$(italic)放置方块部件/$"
+    }
+  ]
+}

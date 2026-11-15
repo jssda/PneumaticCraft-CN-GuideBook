@@ -1,0 +1,30 @@
+{
+  "name": "测温管道模块",
+  "icon": "pneumaticcraft:thermostat_module",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "该管道模块会测量其朝向方块的温度，若温度高于设定阈值，则在所配置的频道上提供红石信号（使用处于输出模式的$(l:tubes/redstone_module)红石管道模块/$来发出信号）。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:module_expansion_card",
+      "text": "为测温管道模块应用$(l:tubes/module_expansion_card)模块拓展卡/$后，会解锁高级界面，可对$(#f00)红石信号/$的发射进行更精细的控制。默认情况下，你可以设置一个阈值：低于该阈值时信号关闭，高于时信号全开（亦可相反）。若在界面中勾选$(bold)高级配置/$，还能获得更多控制选项（见下页）。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/thermostat_gui.png"
+      ],
+      "text": "$(italic)<0°C = 0 级红石信号，>1000°C = 15 级红石信号，0-1000°C = 线性插值（例如 200°C = 3 级红石信号）/$",
+      "anchor": "img"
+    },
+    {
+      "type": "crafting",
+      "text": "制作测温管道模块",
+      "recipe": "pneumaticcraft:thermostat_module"
+    }
+  ]
+}

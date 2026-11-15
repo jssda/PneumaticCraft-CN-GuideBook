@@ -1,0 +1,33 @@
+{
+  "name": "收割无人机",
+  "icon": "pneumaticcraft:harvesting_drone[pneumaticcraft:air=120000]",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:pressure_chamber",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)收割无人机/$是一种专用的、不可编程的$(l:tools/drone)无人机/$，它会在以其部署方块为中心的17x17x17立方体区域内执行$(l:programming/harvest)作物/树木收割/$任务。无人机$(italic)不会/$拾取收获的物品。"
+    },
+    {
+      "type": "spotlight",
+      "title": "自动充气",
+      "item": "pneumaticcraft:charging_station",
+      "text": "与所有类型的无人机一样，这种无人机也需要$(l:base_concepts/pressure)气压/$才能运作，并且在空气不足时会自动寻找$(l:tools/drone#charging)装有发射器升级的充气站/$。"
+    },
+    {
+      "type": "entity",
+      "entity": "pneumaticcraft:harvesting_drone",
+      "offset": -0.3
+    },
+    {
+      "type": "text",
+      "title": "使用工具",
+      "text": "如果你将$(item)收割无人机/$$(thing)潜行右击/$部署在一个（仅）放有任意$(item)锄头/$的容器上，无人机将使用该锄头自动补种作物，并且在没有装备锄头时不会尝试进行任何工作。如果你不需要补种，直接把无人机部署在任意其他方块上即可。"
+    },
+    {
+      "type": "crafting",
+      "text": "值得注意的是，收割无人机已经掌握了用锄头而不是斧头砍倒树木的方法；它们就是这么聪明。",
+      "recipe": "pneumaticcraft:harvesting_drone"
+    }
+  ]
+}

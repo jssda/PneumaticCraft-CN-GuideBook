@@ -1,0 +1,26 @@
+{
+  "name": "标签工作台",
+  "icon": "pneumaticcraft:tag_workbench",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:logistics_frame",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)标签工作台/$ 用于制作 $(item)标签过滤器/$，后者可按物品的 $(l:https://minecraft.gamepedia.com/Tag)物品标签/$ 来过滤物品。例如，在过滤时把所有原木都当作同一种物品处理。标签过滤器可以放入 $(l:logistics/frames)物流框架/$ 的过滤器中，也可以放入无人机所使用的 $(l:programming/item_filter)物品过滤器/$ 编程部件中，它会匹配任何带有该标签过滤器列表中所含物品标签的物品。"
+    },
+    {
+      "type": "text",
+      "title": "用法",
+      "text": "右键点击工作台以打开它的 GUI。$(li)在最左侧的槽位中放入任意物品；如果它带有任何物品标签，这些标签就会显示在物品正下方的左侧列表中。$(li)通过双击标签（或点击「>」按钮）来选择一个或多个标签，它们会被添加到右侧列表中。$(li)在中间的槽位中放入一些纸。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)点击「书与笔」按钮来写入所选的标签。这会消耗一张纸，并在右侧槽位中产出一个 $(item)标签过滤器/$。$(p)放纸的槽位也能接受一个先前已写入的标签过滤器；如果你想编辑某个现有标签过滤器上的标签，这会很有用。"
+    },
+    {
+      "type": "crafting",
+      "text": "合成标签工作台",
+      "recipe": "pneumaticcraft:tag_workbench"
+    }
+  ]
+}

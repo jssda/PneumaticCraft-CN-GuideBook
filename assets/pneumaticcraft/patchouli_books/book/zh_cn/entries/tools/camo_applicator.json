@@ -1,0 +1,21 @@
+{
+  "name": "伪装涂覆器",
+  "icon": "pneumaticcraft:camo_applicator[pneumaticcraft:air=30000]",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)伪装涂覆器/$可用于伪装某些$(pncr)方块：$(li)$(l:tubes/pressure_tubes)压力管道/$$(li)$(l:machines/pneumatic_door)气动门基座/$$(li)$(l:machines/elevators)电梯基座和呼叫器/$$(li)$(l:machines/charging_station)充气站/$$(li)$(l:machines/heat_pipe)热管/$$(p)$(thing)右击/$任意固体方块，将其外观复制到涂覆器中；$(thing)潜行右击/$则清除已复制的方块。 "
+    },
+    {
+      "type": "text",
+      "text": "然后，$(thing)右击/$任意可伪装的方块（见上文）即可应用或移除伪装。$(p)应用伪装需要物品栏中有对应的实际方块，它会作为伪装被消耗掉（不过移除伪装时会返还）。$(p)你也可以用镐或其他合适的工具破坏已伪装的方块来移除伪装；此时只会破坏伪装层。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作伪装涂覆器",
+      "recipe": "pneumaticcraft:camo_applicator"
+    }
+  ]
+}

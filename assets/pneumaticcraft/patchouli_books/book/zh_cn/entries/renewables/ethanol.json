@@ -1,0 +1,40 @@
+{
+  "name": "乙醇",
+  "icon": "pneumaticcraft:ethanol_bucket",
+  "category": "pneumaticcraft:renewables",
+  "advancement": "pneumaticcraft:yeast_culture",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)乙醇/$可在$(l:manufacturing/thermopneumatic_processing_plant)热气动加工机/$中由$(l:renewables/yeast_culture)酵母菌/$与$(thing)糖/$制得。它是$(l:renewables/biodiesel)生物柴油/$的成分之一。"
+    },
+    {
+      "type": "text",
+      "text": "此过程对温度敏感：你需要将热气动加工机的温度保持在 30°C 至 60°C 之间。$(p)这在较温暖的生物群系中非常容易，但在较冷的地区可能需要费些功夫——需要注意的是，环境温度往往会随着你向深处挖掘而升高，因此如果在较低的 Y 层进行加工，温带生物群系或许也合适。"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_sugar"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_melon"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_potato"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_poisonous_potato"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_apple"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_sweet_berries"
+    }
+  ]
+}

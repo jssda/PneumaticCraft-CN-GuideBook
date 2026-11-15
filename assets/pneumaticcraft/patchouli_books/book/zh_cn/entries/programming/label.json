@@ -1,0 +1,23 @@
+{
+  "name": "标签部件",
+  "icon": "pneumaticcraft:textures/progwidgets/label_piece.png",
+  "category": "pneumaticcraft:widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个部件纯粹用于实现 $(l:programming/flow_control)程序流/$。标签在程序中定义了一个点，$(l:programming/jump)跳转/$ 和 $(l:programming/conditions)条件/$ 部件可以跳转到这个点。你必须为它连接一个 $(l:programming/text)文本/$ 部件来命名。之后，任何使用同名 $(thing)文本/$ 部件的跳转/条件都会跳转到这个标签。"
+    },
+    {
+      "type": "text",
+      "text": "$(thing)标签/$ 部件可以用来在程序流中创建一个 $(italic)分支/$（配合 $(l:programming/conditions)条件/$ 使用时），也可以只是为了清晰起见，把程序的各个部分安排在一起。一个实用技巧是勾选 $(bold)显示流/$ 复选框（位于 $(l:programming/programmer)编程器/$ GUI 左下角）；它会用连线展示同名的 $(thing)跳转/条件/标签/$ 部件。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/label_piece.png"
+      ],
+      "text": "$(italic)标签部件/$"
+    }
+  ]
+}

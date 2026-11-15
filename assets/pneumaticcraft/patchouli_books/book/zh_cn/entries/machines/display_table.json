@@ -1,0 +1,21 @@
+{
+  "name": "展示桌",
+  "icon": "pneumaticcraft:display_table",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)展示桌/$ 是一个简单的物品栏，可以存放（并展示）单件物品。它部分是为了装饰用途，但对自动化也可能有用，因为可以通过漏斗、无人机及其他管道系统与展示桌的物品栏交互。"
+    },
+    {
+      "type": "text",
+      "text": "展示桌并排放置时会在视觉上相互连接，不渲染相邻的桌腿，形成一张更大的桌子。这要求两个方块的朝向完全相同；如果朝向不同，桌子就不会以这种方式连接。$(p)视觉上连接的展示桌仍然各自拥有独立的单件物品物品栏。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作展示桌",
+      "recipe": "pneumaticcraft:display_table"
+    }
+  ]
+}

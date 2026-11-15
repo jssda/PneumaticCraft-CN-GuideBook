@@ -1,0 +1,23 @@
+{
+  "name": "物品赋值部件",
+  "icon": "pneumaticcraft:textures/progwidgets/item_assign_piece.png",
+  "category": "pneumaticcraft:widget_other",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)物品赋值/$ 部件是一种高级部件，允许你把一个物品存储到$(l:programming/variables)变量/$中。变量的值既可以是坐标也可以是物品；这里我们讨论后者。$(p)关于坐标变量以及变量的一般说明，请参阅$(l:programming/coordinate_operator)坐标算子/$部件。"
+    },
+    {
+      "type": "text",
+      "text": "要将物品存入给定的 $(thing)变量/$，请在 $(thing)物品赋值/$ 部件的$(italic)右/$侧放置一个含有目标物品的 $(l:programming/item_filter)物品过滤器/$ 部件。该物品会被赋值给变量，变量名通过$(thing)右击/$ $(thing)物品赋值/$ 部件来指定。只有物品本身会从过滤器转移过去；过滤器的设置不会。$(p)如果省略 $(thing)物品过滤器/$ 部件，则无人机会把自己手持的物品赋值给该变量。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/item_assign_piece.png"
+      ],
+      "text": "$(italic)物品赋值部件/$"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "热量",
+  "icon": "minecraft:blaze_powder",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(pncr) 添加了一套$(thing)热量/$系统。热量会像现实中那样在方块之间传递。它与$(l:base_concepts/pressure)气压的扩散/$也有一些相似之处：$(li)热量从较热的物体传向较冷的物体。$(li)方块只会向相邻的支持热量概念的方块传递热量（参见$(l:base_concepts/heat_sources)热源/$）。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)温差越大，热量扩散越快。$(li)不同物体有不同的$(thing)热阻/$。$(item)火把/$和$(item)空气/$的热阻很高，而$(l:base_concepts/basic_materials#compressed_iron_block)压缩铁块/$的热阻非常低。$(thing)热阻/$决定了热量从一个物体传到另一个物体的快慢。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)不同物体有不同的$(thing)热容/$。热容越高，获得相同热量时升温越慢；同样，损失相同热量时降温也越慢。换句话说，提高高热容方块的$(thing)温度/$需要更多$(thing)热量/$，但它失热时温度下降也更慢。"
+    },
+    {
+      "type": "text",
+      "title": "隔热",
+      "anchor": "insulation",
+      "text": "机器如果有面暴露在空气中，就会向空气散热；这一点在有很多暴露面的$(l:manufacturing/refinery)精炼厂/$上尤为明显，但任何导热方块（包括$(l:base_concepts/basic_materials#compressed_iron_block)压缩铁块/$）都是如此。$(p)要避免这种热损失，确保没有面暴露在空气方块中；任何不导热的方块都可以。也不一定非得是完整方块——$(item)活板门/$和$(item)台阶/$就很好用。"
+    },
+    {
+      "type": "text",
+      "title": "热源",
+      "text": "$(pncr) 中的一些机器会产生需要散去的热量，另一些则需要热量才能运转。$(p)因此，你需要$(l:base_concepts/heat_sources)想办法/$操控这些机器的温度……"
+    }
+  ]
+}

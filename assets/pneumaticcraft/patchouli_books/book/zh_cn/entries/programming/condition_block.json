@@ -1,0 +1,23 @@
+{
+  "name": "条件：方块部件",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_block_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个$(l:programming/conditions)条件/$部件。$(p)$(thing)条件：方块/$ 部件允许你检查某个$(l:programming/area)区域/$内是否存在特定的方块。例如，你可以用它检查一个区域内是否有完全成熟的作物。可以通过附加$(l:programming/item_filter)物品过滤器/$来过滤哪些方块有效。"
+    },
+    {
+      "type": "text",
+      "text": "无人机会检查方块能否被精准采集，如果可以，则检查物品过滤器是否匹配精准采集所得的方块。如果不能精准采集，则用方块的掉落物进行过滤。$(p)例如，你可以把过滤器设为小麦，一旦作物会掉落小麦（即完全成熟），就会匹配该过滤器。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_block_piece.png"
+      ],
+      "text": "$(italic)条件：方块部件/$"
+    }
+  ]
+}

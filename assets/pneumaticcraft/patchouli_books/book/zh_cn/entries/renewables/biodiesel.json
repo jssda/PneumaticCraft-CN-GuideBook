@@ -1,0 +1,17 @@
+{
+  "name": "生物柴油",
+  "icon": "pneumaticcraft:biodiesel_bucket",
+  "category": "pneumaticcraft:renewables",
+  "advancement": "pneumaticcraft:ethanol",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)生物柴油/$可在$(l:manufacturing/fluid_mixer)流体混合器/$中由$(l:renewables/ethanol)乙醇/$与$(l:renewables/vegetable_oil)植物油/$制得。它作为燃料与普通$(thing)柴油/$一样好用，但优势在于可再生生产。$(p)生物柴油还可在$(thing)热气动加工机/$中用于制造$(l:components/plastic)塑料/$和$(l:components/lubricant)润滑油/$。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:biodiesel_bucket",
+      "text": "用食物做燃料？有何不可？"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+name: build
+
+on:
+  push:
+    tags:
+      - "v*+mc*"
+  workflow_dispatch:
+    inputs:
+      mod_version:
+        description: "模组版本, 例如 8.2.23"
+        required: false
+        default: "8.2.23"
+      mc:
+        description: "Minecraft 版本, 例如 1.21.1"
+        required: false
+        default: "1.21.1"
+      publish_release:
+        description: "是否创建 GitHub Release (true/false)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 解析版本号
+        id: ver
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            MOD="${{ inputs.mod_version }}"
+            MC="${{ inputs.mc }}"
+            REL="${{ inputs.publish_release }}"
+          else
+            TAG="${GITHUB_REF_NAME#v}"
+            MOD="${TAG%%+mc*}"
+            MC="${TAG##*+mc}"
+            REL="true"
+          fi
+          [ -n "$MOD" ] || MOD="8.2.23"
+          [ -n "$MC" ] || MC="1.21.1"
+          [ -n "$REL" ] || REL="false"
+          echo "mod=$MOD" >> "$GITHUB_OUTPUT"
+          echo "mc=$MC" >> "$GITHUB_OUTPUT"
+          echo "release=$REL" >> "$GITHUB_OUTPUT"
+          echo "模组 $MOD / MC $MC / release=$REL"
+
+      - name: 拉取上游 en_us 手册与 lang 基准
+        run: python3 tools/fetch_upstream.py --mc "${{ steps.ver.outputs.mc }}"
+
+      - name: 校验汉化与上游一致性
+        run: python3 tools/check_book.py --mc "${{ steps.ver.outputs.mc }}"
+
+      - name: 打包资源包
+        run: python3 tools/build.py --mod-version "${{ steps.ver.outputs.mod }}" --mc "${{ steps.ver.outputs.mc }}"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PneumaticCraft-CN-GuideBook-${{ steps.ver.outputs.mod }}-mc${{ steps.ver.outputs.mc }}
+          path: dist/*.zip
+
+      - name: 发布到 GitHub Release
+        if: steps.ver.outputs.release == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip

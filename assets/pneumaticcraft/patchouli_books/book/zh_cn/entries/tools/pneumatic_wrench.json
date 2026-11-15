@@ -1,0 +1,21 @@
+{
+  "name": "气动扳手",
+  "icon": "pneumaticcraft:pneumatic_wrench[pneumaticcraft:air=30000]",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "气动扳手是$(pncr)的$(thing)扳手/$物品。它可以用于多种任务，包括：$(p)$(li)$(thing)右击/$原版或其他模组的方块来旋转它们$(li)$(thing)潜行右击/$$(pncr)机器，使其以物品形式掉落，并保留机器中存储的升级和空气。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(thing)右击/$$(l:base_concepts/drones)无人机/$来拆解它，使其以物品形式掉落。$(li)$(thing)右击/$$(l:tubes/pressure_tubes)压力管道/$来关闭/重新打开管段，使它们彼此隔离。$(p)$(item)气动扳手/$必须先在$(l:machines/charging_station)充气站/$中加压后才能使用。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作气动扳手",
+      "recipe": "pneumaticcraft:pneumatic_wrench"
+    }
+  ]
+}

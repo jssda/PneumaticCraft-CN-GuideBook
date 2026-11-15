@@ -1,0 +1,17 @@
+{
+  "name": "强化箱子",
+  "icon": "pneumaticcraft:reinforced_chest",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)强化箱子/$ 是一个拥有 36 格容量的箱子，具有黑曜石级别的抗爆炸能力，并且在被破坏时会保留其内部物品。"
+    },
+    {
+      "type": "crafting",
+      "text": "合成强化箱子",
+      "recipe": "pneumaticcraft:reinforced_chest"
+    }
+  ]
+}

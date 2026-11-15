@@ -1,0 +1,56 @@
+{
+  "name": "热源",
+  "icon": "pneumaticcraft:vortex_tube",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)静态热源/$是与机器相邻时向机器添加或移除热量的方块和流体。当添加或移除的热量过多时，它们可能会转变成其他方块或流体。注意，热量的提取/添加是在相关方块之外记录的，所以靠打掉再重放方块来重置已提取的热量并不可行。"
+    },
+    {
+      "type": "text",
+      "title": "原版热源",
+      "text": "以下原版方块和流体会作为静态热源：$(li)空气$(li)冰/浮冰/蓝冰$(li)雪$(li)火把$(li)火（会熄灭）$(li)岩浆块（冷却为下界岩）$(li)水（可能冻结或蒸发）$(li)熔岩（冷却为黑曜石）$(li)营火（会熄灭）"
+    },
+    {
+      "type": "text",
+      "title": "模组热源",
+      "text": "一些模组中的方块也会作为具有不同属性的静态热源，包括：$(li)IC2 蒸汽和过热蒸汽$(li)IC2 冷却液和热冷却液$(li)IC2 和沉浸工程的铀块$(li)Quark 烈焰灯$(li)Quark 硫黄石和永冻石$(li)Natura 热沙$(li)所有模组流体都具有热量属性（温度由模组定义）"
+    },
+    {
+      "type": "text",
+      "title": "添加自定义热源",
+      "text": "（面向整合包作者）所有方块的热量属性都在数据包中定义。你可以向 $(thing)data/<mod-id>/pneumaticcraft/block_heat_properties/$ 添加 JSON 文件，来加入你自己的定义，或覆盖/移除默认定义。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:vortex_tube",
+      "text": "$(l:machines/vortex_tube)涡流管/$是一种$(thing)动态热源/$，能把$(l:base_concepts/pressure)气压/$直接转化为热量和冷气。为了提高效率，强烈建议在涡流管未使用的一侧装上$(l:machines/heat_sink)散热片/$。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:heat_frame",
+      "text": "$(l:semiblocks/heat_frame)导热框架/$是一种可以对任意容器中的物品进行加热（或冷冻！）的小装置。注意，导热框架不会直接从$(thing)静态热源/$吸收热量，但你可以在它旁边放一根$(l:machines/heat_pipe)热管/$来传递热量。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:heat_sink",
+      "text": "$(l:machines/heat_sink)散热片/$是一种方块，可以高效地把它所附着方块的热量（或冷气！）散发到空气中。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:heat_pipe",
+      "text": "$(l:machines/heat_pipe)热管/$是一根带隔热外壳的压缩铁芯，可以在方块之间传递热量，而不会与相邻的空气或流体方块产生热交换。与用$(item)压缩铁块/$传热相比，它是更紧凑（也更便宜）的替代方案。你还可以把$(item)散热片/$直接装在热管上。"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:furnace",
+      "text": "当把原版$(item)熔炉/$连接到任何动态热源（例如$(l:machines/vortex_tube)涡流管/$，也包括$(l:compressors/advanced_air_compressor)高级空气压缩机/$这类会产生热量的方块）时，热量会被熔炉当作\"燃料\"消耗掉，使得熔炉可以完全靠热量运转，无需任何固体燃料。这既方便又更高效。"
+    },
+    {
+      "type": "text",
+      "title": "熔炉（续）",
+      "text": "这种给熔炉\"添燃料\"的机制从 100°C 开始生效，温度越高运转越快。在熔炉周围放置多个热源可以增强加热效果。$(p)这种加热效果对原版$(item)高炉/$和$(item)烟熏炉/$同样有效。"
+    }
+  ]
+}

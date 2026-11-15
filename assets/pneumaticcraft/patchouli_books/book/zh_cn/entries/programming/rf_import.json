@@ -1,0 +1,19 @@
+{
+  "name": "输入RF部件",
+  "icon": "pneumaticcraft:textures/progwidgets/rf_import_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 拥有 100,000 FE（Forge Energy）的内部缓存。使用这个部件，你可以从供能方块（例如 $(item)热力膨胀能量单元/$ 或 $(item)沉浸工程电容/$）中提取能量，存入无人机的内部存储。$(p)$(italic)尽管名字如此，这个部件输入的是 FE（Forge Energy），而不是 RF（Redstone Flux）。这个名字是历史遗留问题。/$"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/rf_import_piece.png"
+      ],
+      "text": "$(italic)我获得了力量/$"
+    }
+  ]
+}

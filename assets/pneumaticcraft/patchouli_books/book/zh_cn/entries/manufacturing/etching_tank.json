@@ -1,0 +1,27 @@
+{
+  "name": "蚀刻器",
+  "icon": "pneumaticcraft:etching_tank",
+  "category": "pneumaticcraft:manufacturing",
+  "advancement": "pneumaticcraft:etchacid_bucket",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)蚀刻器/$中应先注入$(l:manufacturing/etching_acid)蚀刻酸/$，然后放入最多 25 张已在$(l:manufacturing/uv_light_box)紫外线灯箱/$中完成部分或全部曝光的$(thing)空印刷电路板/$。$(p)虽然你也可以直接把蚀刻酸倒进世界、把电路板扔进酸液池，但使用蚀刻器要安全和快捷得多。"
+    },
+    {
+      "type": "text",
+      "title": "自动化",
+      "text": "你可以从任意侧面用管道输入$(thing)空印刷电路板/$。蚀刻成功的$(thing)未组装的印刷电路板/$会被移入右上方的输出槽，$(thing)失效的印刷电路板/$则进入右下方的槽。若要自动提取：从机器侧面提取未组装的印刷电路板，从顶部或底部提取失效的印刷电路板。你可以把失效的印刷电路板用管道送入$(thing)高炉/$烧回未曝光的空印刷电路板，重新开始整个流程，从而实现自动化。"
+    },
+    {
+      "type": "text",
+      "title": "加热",
+      "text": "在没有$(l:base_concepts/heat)热量/$时，蚀刻器完全蚀刻一张印刷电路板需要 150 秒（当然它可以同时蚀刻最多 25 张）。如果给蚀刻器加热，可以进一步缩短处理时间，最低可达 30 秒；温度越高，处理越快。但要注意，加热时蚀刻电路板的过程中会额外消耗少量蚀刻酸。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作一个蚀刻器",
+      "recipe": "pneumaticcraft:etching_tank"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "等待部件",
+  "icon": "pneumaticcraft:textures/progwidgets/wait_piece.png",
+  "category": "pneumaticcraft:widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 会等待指定的时间，期间什么都不做。时间通过连接一个 $(l:programming/text)文本/$ 部件并输入时长来指定。$(p)接受以下时长格式：$(li)$(thing)20/$：等待 1 秒（20 刻）$(li)$(thing)10s/$：等待 10 秒$(li)$(thing)5m/$：等待 5 分钟"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/wait_piece.png"
+      ],
+      "text": "$(italic)戈多/$"
+    }
+  ]
+}

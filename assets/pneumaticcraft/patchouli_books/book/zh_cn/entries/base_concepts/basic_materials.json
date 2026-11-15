@@ -1,0 +1,38 @@
+{
+    "name": "基础材料",
+    "icon": "pneumaticcraft:ingot_iron_compressed",
+    "category": "pneumaticcraft:base_concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(pncr) 不会在世界中生成任何额外的矿物。要开始游玩，你只需要一些$(item)铁锭/$，把它们转化为$(item)压缩铁锭$()，模组中的许多配方都会用到它。$(p)转化方法：把你的$(item)铁锭/$扔到地上，然后在附近引发一次爆炸。$(item)TNT/$ 就可以做到，不过任何其他爆炸也同样有效。"
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/patchouli/compressed_iron.png"
+            ],
+            "text": "$(italic)      退后一些/$"
+        },
+        {
+            "type": "spotlight",
+            "anchor": "compressed_iron_ingot",
+            "item": "pneumaticcraft:ingot_iron_compressed",
+            "text": "警告：作为爆炸的副作用，你会损失大约 20% 的铁锭。想避免损失，你也可以在$(l:manufacturing/pressure_chamber)压力室/$中合成$(item)压缩铁锭/$。不过，合成$(thing)压力室/$本身也需要一些$(item)压缩铁锭/$，所以初期的少量损失在所难免。"
+        },
+        {
+            "type": "pneumaticcraft:pressure_chamber",
+            "recipe": "pneumaticcraft:pressure_chamber/compressed_iron_ingot"
+        },
+        {
+            "type": "crafting",
+            "anchor": "compressed_iron_block",
+            "recipe": "pneumaticcraft:compressed_iron_block_from_ingot",
+            "text": "$(item)压缩铁块/$是一种优良的$(l:base_concepts/heat)热导体/$，可以为产热机器提供更多安装$(l:machines/heat_sink)散热片/$的面。不过，也请参见$(l:machines/heat_pipe)热管/$。"
+        },
+        {
+            "type": "pneumaticcraft:pressure_chamber",
+            "recipe": "pneumaticcraft:pressure_chamber/compressed_iron_block"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "条件：流体部件",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_liquid_inventory_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个$(l:programming/conditions)条件/$部件。$(p)$(thing)条件：流体/$ 部件允许你（远程）检查所连接的 $(l:programming/area)区域/$ 部件内的储罐或流体方块中所含流体的数量。它只会统计所连接的$(l:programming/liquid_filter)流体过滤器/$部件允许的流体（不连接过滤器则统计所有流体）。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_liquid_inventory_piece.png"
+      ],
+      "text": "$(italic)条件：流体部件/$"
+    }
+  ]
+}

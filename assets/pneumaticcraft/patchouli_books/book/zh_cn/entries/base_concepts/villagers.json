@@ -1,0 +1,17 @@
+{
+  "name": "机械师村民",
+  "icon": "minecraft:emerald",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "你应该听说过，有这么一位$(thing)村民/$，他会进购一些有趣的 $(pncr) 部件。据说他曾在一起$(l:manufacturing/pressure_chamber)压力室/$事故中受了牵连？总之，如今他更喜欢待在自己的房子里，你可以在村庄中找到这种房子。如果找不到，一个$(l:machines/charging_station)充气站/$或许能吸引无业村民前来……"
+    },
+    {
+      "type": "entity",
+      "name": "机械师",
+      "entity": "minecraft:villager{VillagerData:{profession:'pneumaticcraft:mechanic'}}",
+      "text": "$(italic)并不喜欢$(l:tools/amadron_tablet)亚马龙/$。"
+    }
+  ]
+}

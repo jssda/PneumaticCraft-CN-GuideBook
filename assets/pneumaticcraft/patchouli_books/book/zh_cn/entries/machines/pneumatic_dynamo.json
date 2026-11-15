@@ -1,0 +1,22 @@
+{
+  "name": "气动能源炉",
+  "icon": "pneumaticcraft:pneumatic_dynamo",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)气动能源炉/$ 将 $(l:base_concepts/pressure)压缩空气/$ 转化为 $(thing)Forge Energy/$，可兼容 $(thing)Redstone Flux/$ 以及其他模组的能量系统。它默认产出 40 FE/tick，但可以通过 $(l:base_concepts/upgrades#speed)速度升级/$ 来提升。$(item)通量压缩机/$ 的 FE 输出速率是当前 FE 产量的两倍；默认为 80 FE/tick，但可以通过速度升级来提升。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:pneumatic_dynamo",
+      "text": "影响效率的一个重要因素是能源炉的 $(l:base_concepts/heat)温度/$。能源炉需要 $(thing)散热/$，否则其效率会随着温度升高而下降，直到完全不产生任何能量为止。"
+    },
+    {
+      "type": "crafting",
+      "text": "合成气动能源炉",
+      "recipe": "pneumaticcraft:pneumatic_dynamo"
+    }
+  ]
+}

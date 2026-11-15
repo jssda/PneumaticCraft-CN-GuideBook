@@ -1,0 +1,25 @@
+{
+  "name": "煤油灯",
+  "icon": "pneumaticcraft:kerosene_lamp",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:refinery",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)煤油灯/$ 是一种强大的光源，燃料嘛……你猜对了，就是$(l:manufacturing/refinery)煤油/$。它类似于你可能已经习惯的远距光源，比如 $(thing)神秘时代的奥术灯)/$。$(p)$(italic)技术上讲，煤油灯可以用任何可燃燃料运作，但在这盏灯中煤油比任何其他燃料都更高效，甚至比液化石油气还高。/$"
+    },
+    {
+      "type": "text",
+      "text": "$(item)煤油灯/$ 的默认照射范围为 10 格，可以在 GUI 中调整，最大 30 格。注意，范围越大，燃料消耗越多，且呈平方关系。所以范围翻倍时，燃料消耗会变为 4 倍！$(p)不过，煤油灯的燃料消耗本来就很少。1000mB 煤油在默认 10 格范围下，大约可以让煤油灯运行 $(ttcolor)$(t:煤油灯的效率可在模组配置中修改：见 'D:keroseneLampFuelEfficiency')40 现实分钟/$。"
+    },
+    {
+      "type": "text",
+      "text": "和大多数 $(pncr) 方块一样，$(item)煤油灯/$ 可以用$(thing)红石/$控制。除了常见的开/关模式外，还有一种 $(bold)信号插值/$ 模式。顾名思义，它会根据信号强度对煤油灯的范围进行插值。$(p)例如，假设默认最大范围为 10 格，当施加强度为 8（满值 15）的 $(#f00)红石信号/$ 时，煤油灯的范围为 5 格。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作煤油灯",
+      "recipe": "pneumaticcraft:kerosene_lamp"
+    }
+  ]
+}

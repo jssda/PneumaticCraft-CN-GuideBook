@@ -1,0 +1,39 @@
+{
+  "name": "储罐",
+  "icon": "pneumaticcraft:small_tank",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "一共有四种流体储罐，它们的名字起得颇有「创意」：$(item)小型储罐/$、$(item)中型储罐/$、$(item)大型储罐/$ 和 $(item)巨型储罐/$。虽然 $(l:machines/liquid_hopper)流体漏斗/$ 也适合储存流体，但这些储罐能提供更密集的存储和一些实用的堆叠功能，并且不会自动转移流体（不过，如果加装了 $(l:base_concepts/upgrades#dispenser)发射器升级/$，它们就能推送流体）。"
+    },
+    {
+      "type": "text",
+      "title": "堆叠",
+      "text": "这四种储罐都可以在垂直方向上相互 $(thing)堆叠/$，组成一种类似多方块的结构。为此，用 $(l:tools/pneumatic_wrench)扳手/$ 右键点击储罐；用扳手点击上半部分会尝试把该储罐与上方的储罐连接，点击下半部分则对应下方的储罐。$(p)储罐一旦堆叠起来，只要还有空间，$(ttcolor)$(t:如果流体的密度 < 0，它会向上而非向下移动)较高储罐/$ 中的任何流体都会自动向下流到较低的储罐中。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/small_tanks.png"
+      ],
+      "border": "true",
+      "text": "三个堆叠起来的小型储罐"
+    },
+    {
+      "type": "text",
+      "text": "对此有一些限制：$(li)要合并两个储罐，二者要么必须装有相同的流体（或都没有流体），要么其中一个储罐必须为空$(li)流体 $(italic)不会/$ 向上移动；因此，为了达到最佳效果，应把流体泵入堆叠的顶部储罐，并从底部储罐中抽出$(li)储罐的 GUI 只会显示被右键点击的那个储罐的流体量。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:small_tank",
+      "recipe2": "pneumaticcraft:medium_tank"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:large_tank",
+      "recipe2": "pneumaticcraft:huge_tank"
+    }
+  ]
+}

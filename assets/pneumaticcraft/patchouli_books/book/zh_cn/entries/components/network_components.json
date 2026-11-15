@@ -1,0 +1,48 @@
+{
+  "name": "网络元件",
+  "icon": "pneumaticcraft:network_api",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这些元件主要用于搭建 $(l:programming/security_station)安全站/$，但其中一些也可作为合成组件使用；此外，$(l:components/network_components#network_storage)网络数据存储器/$ 和 $(l:components/network_components#network_api)网络API/$ 可用来存储 $(l:tools/drone)无人机/$ 程序。"
+    },
+    {
+      "type": "crafting",
+      "anchor": "diagnostic",
+      "text": "$(item)诊断子程序/$ 是 $(l:machines/security_station)安全站/$ 中必不可少的元件。$(br)它负责把 $(l:machines/security_station#hacking)骇入尝试/$ 回溯追踪到黑客身上。如果所有 $(item)诊断子程序/$ 都被骇入，你的 $(item)安全站/$ 就已被攻破。",
+      "recipe": "pneumaticcraft:diagnostic_subroutine"
+    },
+    {
+      "type": "crafting",
+      "anchor": "io_port",
+      "text": "$(item)网络交互端口/$ 是 $(l:machines/security_station)安全站/$ 中必不可少的元件。$(br)这是针对你的 $(item)安全站/$ 发起骇入尝试的入口点。",
+      "recipe": "pneumaticcraft:network_io_port"
+    },
+    {
+      "type": "crafting",
+      "anchor": "registry",
+      "text": "$(item)网络注册表/$ 是 $(l:machines/security_station)安全站/$ 中必不可少的元件。$(br)这是黑客的目标之一；如果 $(italic)所有/$ 注册表都被骇入，你的 $(item)安全站/$ 就已被攻破。",
+      "recipe": "pneumaticcraft:network_registry"
+    },
+    {
+      "type": "crafting",
+      "anchor": "node",
+      "text": "$(item)网络节点/$ 是 $(l:machines/security_station)安全站/$ 中的一种通用元件，用于在各必需元件之间构建通路。",
+      "recipe": "pneumaticcraft:network_node"
+    },
+    {
+      "type": "crafting",
+      "anchor": "network_api",
+      "text": "$(item)网络API/$ 可用来存储 $(l:tools/drone)无人机/$ 程序。它需要 $(l:programming/puzzle_pieces)编程拼图/$ 才能编程，并且可用于在 $(l:programming/programmable_controller)可编程控制器/$ 中运行程序，或通过 $(l:programming/external_program)外部程序/$ 编程部件来运行程序。",
+      "recipe": "pneumaticcraft:network_api"
+    },
+    {
+      "type": "crafting",
+      "anchor": "network_storage",
+      "text": "$(item)网络数据存储器/$ 可用来存储 $(l:tools/drone)无人机/$ 程序。它 $(italic)不/$ 需要 $(l:programming/puzzle_pieces)编程拼图/$ 来编程，因此无法用于运行程序；不过，如果你想存储一个程序库，或与其他玩家交易程序，它会很有用。",
+      "recipe": "pneumaticcraft:network_data_storage"
+    }
+  ]
+}

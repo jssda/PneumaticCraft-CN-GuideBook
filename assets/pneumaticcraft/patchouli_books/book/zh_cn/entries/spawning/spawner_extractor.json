@@ -1,0 +1,25 @@
+{
+  "name": "刷怪笼抽取器",
+  "icon": "pneumaticcraft:spawner_extractor",
+  "category": "pneumaticcraft:spawning",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)刷怪笼抽取器/$是获得$(l:spawning/spawner_core)刷怪笼核心/$的两种方式之一，而如果你想使用$(l:spawning/pressurized_spawner)气动刷怪笼/$，就需要核心。$(p)要使用刷怪笼抽取器，需将其放置在原版$(item)刷怪笼/$顶部，而你需要先在世界中某处找到一个刷怪笼。"
+    },
+    {
+      "type": "text",
+      "text": "然后，为刷怪笼抽取器提供 $(thing)-0.5 bar/$ 或更低的真空，并做好战斗准备。事实证明，刷怪笼$(italic)非常/$不情愿被抽取，会以大大加快的速度刷出生物来自卫。一些实用提示：$(li)基础抽取时间约为 60 秒。$(li)然而，附近任何前来防御的生物都会拖慢抽取，数量过多则会使抽取停滞。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)附近必须至少有一名玩家，否则抽取会停滞。$(li)如果$(thing)刷怪笼/$无法刷出防御者（例如光照等级不合适、缺少地面……），过程同样会变慢并最终停滞。$(p)抽取完成后，会弹出一个$(thing)刷怪笼核心/$，刷怪笼则变为$(item)空刷怪笼/$。这个方块可以（也应该）被拾取，因为它用于合成$(l:spawning/pressurized_spawner)气动刷怪笼/$。"
+    },
+    {
+      "type": "crafting",
+      "text": "合成刷怪笼抽取器。",
+      "recipe": "pneumaticcraft:spawner_extractor"
+    }
+  ]
+}

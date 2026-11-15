@@ -1,0 +1,40 @@
+{
+  "name": "可编程控制器",
+  "icon": "pneumaticcraft:programmable_controller",
+  "category": "pneumaticcraft:programming",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "可编程控制器能做的事情与 $(l:tools/drone)无人机/$ 非常相似。程序可以在 $(l:programming/programmer)编程器/$ 中编写，并保存到 $(item)无人机/$ 或 $(l:components/network_components#network_api)网络API/$ 中。这两种物品随后都可以放入 $(item)可编程控制器/$。只要提供足够的$(l:base_concepts/pressure)压力/$，$(item)可编程控制器/$ 就会像程序写在 $(item)无人机/$ 上一样执行程序。 "
+    },
+    {
+      "type": "text",
+      "text": "不过两者仍有一些区别：$(li)$(item)可编程控制器/$ 使用的是 $(item)无人机/$ 的微型版本——$(thing)迷你无人机/$。它不是真实实体，因此不涉及寻路，而且 $(thing)迷你无人机/$ 可以穿墙移动。这对服务器更友好，总体上也更可靠。$(li)执行程序时，$(item)可编程控制器/$ 消耗空气的速率为 10mL/tick（而无人机仅为 1mL/tick）。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(item)可编程控制器/$ 无法执行以下部件：电脑部件、攻击实体、无人机条件：实体、卸载实体、搭载实体、传送、待机、自毁。$(p)$(item)可编程控制器/$ 通常更适合大型应用，例如大面积挖掘或建造大型建筑。"
+    },
+    {
+      "type": "text",
+      "title": "物品/流体交互",
+      "text": "$(thing)迷你无人机/$ 收集的任何物品或流体，都可以通过 $(item)可编程控制器/$ 方块的侧面进行交互。$(p)默认情况下，这个“无人机”只有一个物品栏槽位和一个 16000mB 的储罐。可以通过添加 $(l:base_concepts/upgrades#inventory)物品栏升级/$（最多 35 个）来增大物品栏，同时每个升级还会使储罐容量增加 1000mB。"
+    },
+    {
+      "type": "text",
+      "title": "交互（续）",
+      "text": "默认情况下，$(item)可编程控制器/$ 的顶面和侧面用于物品交互，底面用于放入或取出可编程物品；如有需要，可以在 $(bold)侧面配置/$ GUI 标签页中调整。$(p)$(item)可编程控制器/$ 的所有面始终都可以用于流体交互。"
+    },
+    {
+      "type": "text",
+      "title": "物品充能",
+      "text": "可编程控制器可以为迷你无人机手持的物品（即无人机物品栏 0 号槽位中的物品）$(thing)充能/$。这既包括 $(l:tools/jackhammer)气动凿岩锤/$ 这类可加压物品，也包括使用 $(thing)Forge Energy/$ 的物品。充能使用的是可编程控制器自身缓存中的空气和/或 FE。充能功能默认关闭，可在控制器 GUI 中启用（$(thing)手持物品充能/$ 侧面标签页）。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作可编程控制器",
+      "recipe": "pneumaticcraft:programmable_controller"
+    }
+  ]
+}

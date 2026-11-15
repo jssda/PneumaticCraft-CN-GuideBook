@@ -1,0 +1,31 @@
+{
+  "name": "真空陷阱",
+  "icon": "pneumaticcraft:vacuum_trap",
+  "category": "pneumaticcraft:spawning",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)真空陷阱/$是一种用于困住生物、并将其精华吸收进$(l:spawning/spawner_core)刷怪笼核心/$的机器，以便日后在$(l:spawning/pressurized_spawner)气动刷怪笼/$中使用。$(p)要使用$(thing)真空陷阱/$，你需要完成以下步骤："
+    },
+    {
+      "type": "text",
+      "text": "$(li)1. 确保真空陷阱处于 -0.5 bar 或更低的压力。这里推荐安装$(l:base_concepts/upgrades#volume)容量升级/$。此外，如果你打算移动真空陷阱，请务必用扳手拆卸，而不是用镐破坏，以保留其中储存的真空。$(li)2. 放入一个未满的$(l:spawning/spawner_core)刷怪笼核心/$来接收捕获的生物。$(li)3. 打开真空陷阱的门，可以$(thing)对其潜行右击/$，或施加红石信号。"
+    },
+    {
+      "type": "text",
+      "title": "限制",
+      "text": "真空陷阱绝不会捕获：$(li)玩家$(li)无人机$(li)Boss 生物（凋灵、末影龙……）$(li)已驯服的动物$(li)任何由原版刷怪笼刷出的生物$(p)此外，你可以将生物的实体 ID（例如 $(thing)minecraft:zombie/$）加入 $(thing)pneumaticcraft:vacuum_trap_blacklisted/$ 实体类型标签，以将其列入黑名单。"
+    },
+    {
+      "type": "text",
+      "title": "记忆源质",
+      "text": "如果真空陷阱的储罐中含有至少 100mB 的$(l:base_concepts/memory_essence)记忆源质/$，生物吸收效率将大幅提升；被捕获的生物对已安装$(thing)刷怪笼核心/$精华的贡献将从 1% 提升到 2 - 4%，也就是说，填满一个核心不再需要捕获 100 只生物，而只需捕获 25 - 50 只。每次捕获生物都会消耗 100mB 记忆源质。"
+    },
+    {
+      "type": "crafting",
+      "text": "合成真空陷阱",
+      "recipe": "pneumaticcraft:vacuum_trap"
+    }
+  ]
+}

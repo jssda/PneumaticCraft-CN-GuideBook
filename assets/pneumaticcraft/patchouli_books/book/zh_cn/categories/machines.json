@@ -1,0 +1,6 @@
+{
+  "name": "机械",
+  "description": "提供各种实用功能的机械及其他设备，其中许多需要$(l:base_concepts/pressure)压力/$才能运作。",
+  "icon": "pneumaticcraft:vortex_tube",
+  "sortnum": 5
+}

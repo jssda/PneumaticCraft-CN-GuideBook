@@ -1,0 +1,21 @@
+{
+  "name": "气动刷怪笼",
+  "icon": "pneumaticcraft:pressurized_spawner",
+  "category": "pneumaticcraft:spawning",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)气动刷怪笼/$是一种利用$(l:base_concepts/pressure)压力/$刷出生物的强大装置。它不受光照等级和玩家距离的影响，并可通过红石启用/禁用。$(p)要使用气动刷怪笼，你需要一个装有已捕获生物精华的$(l:spawning/spawner_core)刷怪笼核心/$，以及至少 10 bar 的压力。"
+    },
+    {
+      "type": "text",
+      "text": "当核心含有多种生物精华时，会随机选择一种生物。例如，若你的核心为 50% 僵尸、25% 苦力怕、25% 空置，那么每次刷怪尝试都有 50% 几率刷出僵尸、25% 几率刷出苦力怕、25% 几率什么都不刷。$(p)即使没有刷出生物，仍会消耗空气，因此部分空置的核心效率不高（不过话说回来，一个有 50% 几率刷出稀有生物的核心，总比没有核心强……）"
+    },
+    {
+      "type": "crafting",
+      "text": "合成气动刷怪笼。",
+      "recipe": "pneumaticcraft:pressurized_spawner"
+    }
+  ]
+}

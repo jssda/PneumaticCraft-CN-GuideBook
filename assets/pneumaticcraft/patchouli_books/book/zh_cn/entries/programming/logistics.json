@@ -1,0 +1,19 @@
+{
+  "name": "物流部件",
+  "icon": "pneumaticcraft:textures/progwidgets/logistics_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "该部件让 $(l:tools/drone)无人机/$ 像 $(l:logistics/logistics_drone)物流无人机/$ 一样工作，但比标准物流无人机功能更灵活：$(li)它可以与其他部件配合使用，例如搭配 $(l:programming/standby)待机/$ 部件以更高效地利用空气$(li)可以自定义 $(l:programming/area)区域/$（标准物流无人机的区域是以无人机为中心的 33x33x33，且无法更改）"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/logistics_piece.png"
+      ],
+      "text": "$(italic)物流部件/$"
+    }
+  ]
+}

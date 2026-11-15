@@ -1,0 +1,84 @@
+{
+  "name": "编程器",
+  "icon": "pneumaticcraft:programmer",
+  "category": "pneumaticcraft:programming",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)编程器/$ 是一种用于给 $(l:tools/drone)无人机/$ 编程的机器，它采用可视化编程系统，在编程 GUI 中拼装 $(l:programming/puzzle_pieces)编程拼图/$。$(thing)编程器/$ 工作时不需要$(l:base_concepts/pressure)压力/$。$(thing)编程/$ 分类下的其余条目包含了更多关于如何编写无人机程序的信息。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作编程器",
+      "recipe": "pneumaticcraft:programmer"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/programmer_gui.png"
+      ],
+      "text": "$(italic)编程器 GUI：各区域的信息见后续页面/$"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)1. 主编程区域/$$(p)这里是你实际构建程序的地方。部件从$(thing)部件托盘（区域 2）/$拖到这里，再“咬合”在一起形成程序。$(p)你可以用鼠标滚轮或右侧的滚动条缩放编程区域。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)2. 部件托盘/$$(p)这个区域存放着你用于构建程序的部件。它包含的部件比显示出来的更多；你可以用托盘下方的箭头按钮翻页，或按 $(thing)空格/$ 或 $(thing)Tab/$ 展开托盘以显示全部部件。$(p)展开后，托盘上方还会显示一个文本框，你可以在其中输入过滤字符串来搜索部件。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)3. 无人机槽/$$(p)把要编程的 $(l:tools/drone)无人机/$（或 $(l:components/network_components)网络数据存储器/API/$）放在这里。准备好为无人机编程时，按下 $(thing)⟶/$ 按钮写入程序。如果有需要，你可以用左侧的文本框为无人机命名。成功时你会听到声音反馈。$(p)你还可以用 $(thing)⟵/$ 按钮从无人机（或网络数据存储器/API）导入程序。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)4. 难度选择/$$(p)这些单选按钮控制托盘中可用的编程部件，同时也会启用/禁用一些高级功能，例如$(l:programming/coordinate_operator)变量/$。$(p)$(bold)5. 玩家物品栏/$$(p)你自己的物品栏；如果你身上有 $(l:tools/gps_tool)定位工具/$ 或 $(l:tools/gps_area_tool)区域定位工具/$，可以用它们点击 $(l:programming/area)区域/$ 或 $(l:programming/coordinate)坐标/$ 部件，把工具的设定转移到部件上。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)6. 导航与显示选项/$$(p)你可以使用这些按钮来：$(li)导航到程序的 $(l:programming/start)开始/$ 部件$(li)导航到你最后放置的部件$(li)切换每个部件额外信息的显示$(li)切换 $(l:programming/jump)跳转/$ 与 $(l:programming/label)标签/$ 部件之间连线的显示"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)7. 杂项按钮/$$(p)GUI 左侧边缘的按钮按顺序依次为：$(li)$(thing)撤销/$最近 20 步内的操作$(li)$(thing)重做/$之前撤销的操作$(li)将你的程序以 JSON 文件$(thing)导入或导出/$到 $(l:https://pastebin.com)pastebin.com/$（Pastebin 登录可选）$(li)$(thing)删除/$整个程序（可撤销）$(li)将你的程序$(thing)转换/$为$(thing)相对/$坐标（更多信息见$(l:programming/programmer#convert_relative)此页面/$）"
+    },
+    {
+      "type": "text",
+      "anchor": "ids",
+      "title": "编程部件 ID",
+      "text": "如果你用 $(thing)F3+H/$ 开启扩展工具提示，你会注意到每个编程部件的工具提示末尾还包含其内部部件 ID。如果你打算用 $(l:machines/drone_interface)无人机接口/$ 进行无人机编程，这会很有用——无人机接口的 $(thing)setAction()/$ Lua 方法以这些 ID 作为参数（$(thing)pneumaticcraft:/$ 前缀可省略）。"
+    },
+    {
+      "type": "text",
+      "title": "分享程序",
+      "text": "如果你想与其他玩家分享你的程序，有几种方法可选：$(li)你可以用 $(thing)Pastebin/$ 按钮把程序导出到 $(l:https://pastebin.com)pastebin.com/$$(li)$(thing)Pastebin/$ GUI 还允许把程序写入剪贴板以便复制粘贴$(li)你可以把程序保存到 $(l:tools/drone)无人机/$ 或 $(l:components/network_components)网络数据存储器/网络API/$ 中，然后把物品交给服务器上的其他玩家。"
+    },
+    {
+      "type": "text",
+      "anchor": "convert_relative",
+      "title": "转换为相对位置",
+      "text": "假设你设计了一个运行自动化农场的程序，并想把它分享出去。不同世界里的玩家，农场坐标各不相同，他们就得逐个修改每一个 $(l:programming/area)区域/$ 部件，非常麻烦。$(p)$(thing)转换为相对位置/$ 按钮让这件事变得简单；它还会通过工具提示告诉你转换程序需要做些什么。"
+    },
+    {
+      "type": "text",
+      "anchor": "convert_relative",
+      "title": "转换为相对位置（续）",
+      "text": "你需要添加一个固定的 $(l:programming/coordinate_operator)坐标算子/$ 部件，以及一个 $(l:programming/coordinate)坐标/$ 部件，其中包含$(thing)基准位置/$（例如输入箱子的位置）。它会把程序中用到的所有绝对位置（区域或坐标）转换为相对于该基准位置的坐标。$(p)现在，你的程序使用者只需调整一个坐标就能使用你的程序了！"
+    },
+    {
+      "type": "text",
+      "flag": "mod:jei",
+      "anchor": "jei",
+      "title": "JEI 集成",
+      "text": "如果安装了 JEI，在编程器 GUI 打开时打开 JEI 配方界面，你会看到一个“+”（移动物品）按钮。点击它会为配方中的每种输入物品添加 $(l:programming/item_filter)物品过滤器/$ 部件。如果编程区域中有一个未连接物品过滤器的 $(l:programming/crafting)合成/$ 部件，物品过滤器会直接添加到该合成部件上，方便快捷地配置配方；否则，它们会成排添加到编程区域的左上角。"
+    },
+    {
+      "type": "text",
+      "flag": "mod:jei",
+      "title": "JEI 集成（续）",
+      "text": "默认情况下，每种物品类型只会添加一个物品过滤器（例如 $(item)石台阶/$ 配方只会创建一个 $(item)石头/$ 过滤器，而不是三个）。记住，按住中键拖拽可以复制部件。如果你想为配方中的每一个物品（包括重复的）都添加物品过滤器，在点击 JEI 中的“+”按钮时按住 Shift 即可。"
+    }
+  ]
+}

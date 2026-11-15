@@ -1,0 +1,23 @@
+{
+  "name": "外部程序部件",
+  "icon": "pneumaticcraft:textures/progwidgets/external_program_piece.png",
+  "category": "pneumaticcraft:widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "该部件会搜索指定 $(l:programming/area)区域/$ 内的所有容器。对于每一个容器，它会遍历每一个槽位。当找到 $(l:tools/drone)无人机/$ 或$(l:components/network_components#network_api)网络 API/$ 时，它会运行存储在该物品上的程序。$(p)程序执行完毕后，$(item)无人机/$ 会继续处理下一个槽位和/或容器。"
+    },
+    {
+      "type": "text",
+      "text": "该部件可用于调试 $(item)无人机/$ 程序，因为$(l:programming/programmer)编程器/$也算是一个容器。只需用 $(thing)外部程序/$ 部件给 $(item)无人机/$ 编程，并把区域（仅）设为 $(item)编程器/$ 所在位置，然后放置无人机。$(p)现在，把一个 $(item)无人机/$ 或$(item)网络 API/$ 放入编程器，并编写你的程序。当你按下 $(item)编程器/$ 中的 $(thing)⟶ (export)/$ 按钮后，已部署的 $(item)无人机/$ 就会立即执行你的程序。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/external_program_piece.png"
+      ],
+      "text": "$(italic)程序套娃/$"
+    }
+  ]
+}

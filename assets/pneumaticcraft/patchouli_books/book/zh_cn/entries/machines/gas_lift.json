@@ -1,0 +1,30 @@
+{
+  "name": "气举",
+  "icon": "pneumaticcraft:gas_lift",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)气举/$ 基本上就是一种泵。它利用$(l:base_concepts/pressure)气压/$降低流体的密度，迫使其向上运动。$(p)加压后，它会向下伸出$(l:components/drill_pipe)气举钻管/$（需要你自己提供），直到碰到任意流体方块，随后开始泵送。这使它非常适合开采$(l:base_concepts/oil)原油/$，因为原油可能深埋地下。"
+    },
+    {
+      "type": "text",
+      "text": "沿途的任何固体方块都会被破坏，且没有掉落物。破坏方块会消耗空气；对泥土或沙子这样的软方块消耗极少，但对黑曜石这样的硬方块消耗要多得多。$(p)泵送流体所需的最低压力随泵送深度（即当前伸出的 $(item)气举钻管/$ 数量）线性增长，最高至 4.9 bar。"
+    },
+    {
+      "type": "text",
+      "title": "模式标签页",
+      "text": "气举可以在 3 种模式之间切换：$(li)$(#00f)泵出并允许储罐排空/$ 伸出气举钻管，遇到流体就泵送。$(li)$(#00f)泵出并在过滤器中保留流体/$ 与上面相同，但会始终在储罐中保留 1000mB 流体。当只想泵送某种特定流体时很有用，可以确保不会泵入其他流体。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(#00f)收回气举钻管/$ 会让 $(thing)气举/$ 停止泵送，并把已伸出的气举钻管全部收回其物品栏。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作气举",
+      "recipe": "pneumaticcraft:gas_lift"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "无人机条件：压力部件",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_drone_pressure_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个 $(l:programming/conditions)条件/$ 部件。$(p)$(thing)无人机条件：压力/$ 部件允许你检测$(l:base_concepts/pressure)压力/$，即该 $(l:tools/drone)无人机/$ 内部的气压。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_drone_pressure_piece.png"
+      ],
+      "text": "$(italic)无人机条件：压力部件/$"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "气动发电机",
+  "icon": "pneumaticcraft:pneumatic_generator",
+  "category": "pneumaticcraft:machines",
+  "flag": "pneumaticcraft:pneumaticGeneratorEnabled",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "气动发电机能够利用 $(l:base_concepts/pressure)压缩空气/$ 产生 $(thing)IndustrialCraft 2 EU/$。这是一台二级机器，从其 15 bar 的最低工作压力即可看出。它的默认效率为 40%，但可以通过$(ttcolor)$(t:参见 'I:pneumaticGeneratorEfficiency')修改配置文件/$来调整。$(p)在未安装任何 $(l:base_concepts/upgrades#speed)速度升级/$ 时，它的输出速率为 32 EU/tick；插入一个升级后为 128 EU/tick，插入两个后为 512 EU/tick。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:pneumatic_generator",
+      "text": "空气消耗量（mL/tick）为：$(p)$(formula)  输出速率 / E * 400/$$(p)其中 $(formula)E/$ 为以百分比表示的效率。例如，当默认效率为 40%、输出速率为 32EU/tick 时，空气消耗量 = $(formula)32 / 40 * 400 = 320mL/tick/$。"
+    },
+    {
+      "type": "text",
+      "text": "影响效率的一个重要因素是发电机的 $(l:base_concepts/heat)温度/$。发电机需要 $(thing)散热/$，否则其效率会随着温度升高而下降，直到完全不产生任何能量为止。"
+    },
+    {
+      "type": "crafting",
+      "text": "合成气动发电机",
+      "recipe": "pneumaticcraft:pneumatic_generator"
+    }
+  ]
+}

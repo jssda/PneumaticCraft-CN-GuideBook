@@ -1,0 +1,23 @@
+{
+  "name": "扔出物品部件",
+  "icon": "pneumaticcraft:textures/progwidgets/item_drop_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "该部件会让 $(l:tools/drone)无人机/$ 在所连接的 $(l:programming/area)区域/$ 内丢出其物品栏中的物品。$(thing)右击/$ $(thing)扔出物品/$ 部件，可以指定区域内每个位置可丢出的物品数量。你还可以在 $(thing)Random/$ 和 $(thing)Straight/$ 两种模式之间切换，前者会带有一个小的随机偏移丢下物品（就像原版的 $(item)投掷器/$ 一样），后者则将物品笔直丢下。"
+    },
+    {
+      "type": "text",
+      "text": "你还可以连接一个 $(l:programming/item_filter)物品过滤器/$。连接过滤器后，只有过滤器允许的物品才会被丢出。$(p)当 $(item)无人机/$ 的物品栏中不再有适用的物品，或 $(item)无人机/$ 已访问过区域内所有位置时，该部件执行完毕。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/item_drop_piece.png"
+      ],
+      "text": "$(italic)扔出物品部件/$"
+    }
+  ]
+}

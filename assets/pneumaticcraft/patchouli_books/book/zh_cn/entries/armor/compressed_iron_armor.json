@@ -1,0 +1,22 @@
+{
+  "name": "压缩铁盔甲",
+  "icon": "pneumaticcraft:compressed_iron_helmet",
+  "category": "pneumaticcraft:armor",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)压缩铁盔甲/$是一套游戏前期盔甲，略优于同级别的$(item)铁盔甲/$部件：韧性和耐久度稍高，并能抵抗部分击退。可在$(item)铁砧/$中使用$(item)压缩铁锭/$修复。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:compressed_iron_helmet",
+      "recipe2": "pneumaticcraft:compressed_iron_chestplate"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:compressed_iron_leggings",
+      "recipe2": "pneumaticcraft:compressed_iron_boots"
+    }
+  ]
+}

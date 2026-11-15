@@ -1,0 +1,20 @@
+{
+  "name": "编程拼图",
+  "icon": "pneumaticcraft:textures/progwidgets/start_piece.png",
+  "category": "pneumaticcraft:programming",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)程序拼图/$，或 $(thing)拼图/$，是给 $(l:tools/drone)无人机/$ 用 $(l:programming/programmer)编程器/$ 编程时使用的实体物品。给无人机编程时会消耗拼图，但用更小（或为空）的程序覆盖 $(item)无人机/$ 即可取回。$(p)$(thing)拼图/$在 $(item)编程器/$ GUI 中的虚拟表现形式称为$(thing)编程部件/$。"
+    },
+    {
+      "type": "text",
+      "text": "要给 $(l:tools/drone)无人机/$ 写入程序，你必须把 $(thing)拼图/$ 放在自己的物品栏里，或者放在与 $(item)编程器/$ 相邻（任意一面）的容器内。$(p)如果你处于创造模式，编程完全免费，不需要任何拼图。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:programming_puzzle"
+    }
+  ]
+}
